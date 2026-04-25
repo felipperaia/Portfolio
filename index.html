@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felippe Raia — Portfólio</title>
+    <meta name="description" content="Portfólio de Felippe Raia - Desenvolvimento, automação e integrações.">
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="bg-grid"></div>
+    <div class="glow-orb"></div>
+
+    <!-- Navbar -->
+    <nav id="navbar">
+        <div class="container nav-inner">
+            <a href="#" class="logo">
+                <span class="logo-code">&lt;/&gt;</span>
+                <span>dev</span>
+                <span>Felippe Raia</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#sobre" data-i18n="nav_about">Sobre</a></li>
+                <li><a href="#experiencia" data-i18n="nav_exp">Experiência</a></li>
+                <li><a href="#tecnologias" data-i18n="nav_tech">Tecnologias</a></li>
+                <li><a href="#certificacoes" data-i18n="nav_certs">Certificações</a></li>
+                <li><a href="#contato" data-i18n="nav_contact">Contato</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="btn-icon" id="langToggle" title="PT/EN">PT</button>
+                <button class="btn-icon" id="themeToggle" title="Tema">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="#sobre" data-i18n="nav_about">Sobre</a>
+            <a href="#experiencia" data-i18n="nav_exp">Experiência</a>
+            <a href="#tecnologias" data-i18n="nav_tech">Tecnologias</a>
+            <a href="#certificacoes" data-i18n="nav_certs">Certificações</a>
+            <a href="#contato" data-i18n="nav_contact">Contato</a>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-badge reveal">
+            <span class="dot"></span>
+            <span data-i18n="hero_badge">Disponível para oportunidades</span>
+        </div>
+        <h1 class="reveal stagger-1">Felippe Raia</h1>
+        <p class="reveal stagger-2" data-i18n="hero_desc">
+            Transformo problemas reais em software útil, automações inteligentes e integrações que melhoram operação, produtividade e tomada de decisão.
+        </p>
+        <p class="hero-sub reveal stagger-3" data-i18n="hero_sub">
+            Sou desenvolvedor com atuação prática em software, automação e suporte a ambientes técnicos.
+        </p>
+        <div class="hero-actions reveal stagger-4">
+            <a href="#projetos" class="btn btn-primary" data-i18n="cta_projects">Ver projetos</a>
+            <a href="/public/curriculum_felippe.pdf" class="btn btn-ghost" download data-i18n="cta_cv">Baixar currículo</a>
+            <a href="#contato" class="btn btn-ghost" data-i18n="cta_talk">Falar comigo</a>
+        </div>
+        <div class="scroll-indicator">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Sobre -->
+    <section id="sobre">
+        <div class="container">
+            <div class="about-content reveal">
+                <span class="section-label" data-i18n="label_about">Sobre</span>
+                <h2 class="section-title" data-i18n="title_about">Sobre mim</h2>
+                <p data-i18n="about_p1">
+                    Sou um profissional de TI com experiência prática em desenvolvimento, automação e suporte a ambientes técnicos.
+                </p>
+                <p data-i18n="about_p2">
+                    Tenho trabalhado em projetos que unem software, IA, integração de dados e experiência operacional. Atuo com <span class="highlight">TypeScript</span>, <span class="highlight">JavaScript</span>, <span class="highlight">HTML</span>, <span class="highlight">CSS</span>, <span class="highlight">Python</span>, <span class="highlight">Node.js</span>, <span class="highlight">Java</span>, <span class="highlight">VSCode</span>, <span class="highlight">Git</span>, <span class="highlight">WSL/Ubuntu</span>, ambientes de IA local, outros sistemas/programas e linguagens. Também venho fortalecendo minha base em <span class="highlight">ServiceNow</span>, especialmente em scripting, ACL, flows design, Agents de I.A e outros.
+                </p>
+                <p data-i18n="about_p3">
+                    Desenvolvo soluções com foco em clareza técnica, organização e aplicação prática.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- Projetos -->
+    <section id="projetos">
+        <div class="container">
+            <div class="text-center reveal">
+                <span class="section-label" data-i18n="label_projects">Projetos</span>
+                <h2 class="section-title" data-i18n="title_projects">Projetos em destaque</h2>
+            </div>
+
+            <!-- Projeto 1: AutoMax Peças -->
+            <article class="project-card reveal">
+                <div class="project-header">
+                    <div class="project-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                            <line x1="3" y1="9" x2="21" y2="9"></line>
+                            <line x1="9" y1="21" x2="9" y2="9"></line>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="project-title">AutoMax Peças</h3>
+                        <p class="project-desc" data-i18n="p1_desc">Site esqueleto de landing page para loja de peças automotivas — template base para projetos de sites institucionais e de vendas.</p>
+                    </div>
+                </div>
+                <div class="project-meta">
+                    <div class="meta-item">
+                        <div class="meta-label">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 16v-4"></path><path d="M12 8h.01"></path></svg>
+                            Desafio
+                        </div>
+                        <div class="meta-text" data-i18n="p1_challenge">Criar um modelo de landing page profissional e responsivo para clientes do setor automotivo, servindo de base para novos projetos.</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"></path><path d="M2 17l10 5 10-5"></path><path d="M2 12l10 5 10-5"></path></svg>
+                            Stack
+                        </div>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Netlify</span>
+                        </div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                            Seu Papel
+                        </div>
+                        <div class="meta-text" data-i18n="p1_role">Design e desenvolvimento front-end completo — estrutura, estilo e interatividade da landing page.</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"></path><path d="M12 5l7 7-7 7"></path></svg>
+                            Próximo Passo
+                        </div>
+                        <div class="meta-text" data-i18n="p1_next">Adaptar o template para novos clientes e nichos de mercado.</div>
+                    </div>
+                </div>
+                <div class="project-actions">
+                    <a href="https://automaxpecas.netlify.app/" class="btn btn-primary" target="_blank" rel="noopener">
+                        <span>→</span> Demo
+                    </a>
+                    <a href="https://github.com/felipperaia/AutoMaxPecas" class="btn btn-ghost" target="_blank" rel="noopener">GitHub</a>
+                </div>
+            </article>
+
+            <!-- Projeto 2: Interactive English Quiz -->
+            <article class="project-card reveal">
+                <div class="project-header">
+                    <div class="project-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                            <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="project-title">Interactive English Quiz</h3>
+                        <p class="project-desc" data-i18n="p2_desc">Quiz interativo de inglês com questões de múltipla escolha, pontuação em tempo real e feedback imediato ao usuário.</p>
+                    </div>
+                </div>
+                <div class="project-meta">
+                    <div class="meta-item">
+                        <div class="meta-label">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 16v-4"></path><path d="M12 8h.01"></path></svg>
+                            Desafio
+                        </div>
+                        <div class="meta-text" data-i18n="p2_challenge">Criar uma forma divertida e interativa de praticar inglês diretamente no navegador, sem dependências externas.</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"></path><path d="M2 17l10 5 10-5"></path><path d="M2 12l10 5 10-5"></path></svg>
+                            Stack
+                        </div>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Netlify</span>
+                        </div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                            Seu Papel
+                        </div>
+                        <div class="meta-text" data-i18n="p2_role">Desenvolvimento front-end completo — UI, lógica do quiz, sistema de pontuação e feedback ao usuário.</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"></path><path d="M12 5l7 7-7 7"></path></svg>
+                            Próximo Passo
+                        </div>
+                        <div class="meta-text" data-i18n="p2_next">Adicionar mais categorias de questões e suporte a outros idiomas.</div>
+                    </div>
+                </div>
+                <div class="project-actions">
+                    <a href="https://interactiveenglishquiz.netlify.app" class="btn btn-primary" target="_blank" rel="noopener">
+                        <span>→</span> Demo
+                    </a>
+                    <a href="https://github.com/felipperaia/English-Quiz" class="btn btn-ghost" target="_blank" rel="noopener">GitHub</a>
+                </div>
+            </article>
+
+            <!-- Projeto 3: GitHub Profile -->
+            <article class="project-card reveal">
+                <div class="project-header">
+                    <div class="project-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="project-title">Felippe Raia no GitHub</h3>
+                        <p class="project-desc" data-i18n="p3_desc">Perfil público com repositórios de projetos web, automação, quizzes e mais — a melhor forma de conhecer meu trabalho na prática.</p>
+                    </div>
+                </div>
+                <div class="project-meta">
+                    <div class="meta-item">
+                        <div class="meta-label">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 16v-4"></path><path d="M12 8h.01"></path></svg>
+                            Propósito
+                        </div>
+                        <div class="meta-text" data-i18n="p3_challenge">Centralizar projetos e demonstrar evolução técnica de forma pública e organizada, com código-fonte disponível.</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"></path><path d="M2 17l10 5 10-5"></path><path d="M2 12l10 5 10-5"></path></svg>
+                            Tecnologias Usadas
+                        </div>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">Node.js</span>
+                        </div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                            O que você encontra
+                        </div>
+                        <div class="meta-text" data-i18n="p3_role">Projetos de front-end, automações, quizzes, landing pages e experimentos — todos com código aberto e documentação.</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"></path><path d="M12 5l7 7-7 7"></path></svg>
+                            Próximo Passo
+                        </div>
+                        <div class="meta-text" data-i18n="p3_next">Continuar publicando projetos, melhorar documentação e contribuir com projetos open source.</div>
+                    </div>
+                </div>
+                <div class="project-actions">
+                    <a href="https://github.com/felipperaia" class="btn btn-primary" target="_blank" rel="noopener">
+                        <span>→</span> Ver Perfil
+                    </a>
+                    <a href="https://github.com/felipperaia?tab=repositories" class="btn btn-ghost" target="_blank" rel="noopener">Repositórios</a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- Experiência & Certificações -->
+    <section id="experiencia">
+        <div class="container">
+            <div class="two-col">
+                <!-- Experiência -->
+                <div class="reveal">
+                    <span class="section-label" data-i18n="label_exp">Trajetória</span>
+                    <h2 class="section-title" style="text-align:left;" data-i18n="title_exp">Experiência</h2>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-title">EDX</div>
+                            <div class="timeline-role" data-i18n="exp_role">Profissional de TI</div>
+                            <div class="timeline-desc" data-i18n="exp_desc">Atuação prática em desenvolvimento, automação e suporte.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certificações -->
+                <div class="reveal stagger-2" id="certificacoes">
+                    <span class="section-label" data-i18n="label_certs">Conquistas</span>
+                    <h2 class="section-title" style="text-align:left;" data-i18n="title_certs">Certificações</h2>
+
+                    <div class="cert-card">
+                        <div class="cert-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                            </svg>
+                        </div>
+                        <div>
+                            <div class="cert-title">Alura — Lógica de Programação</div>
+                            <div class="cert-desc" data-i18n="cert1_desc">Mergulhe em programação com JavaScript — lógica, algoritmos, funções e fundamentos práticos de desenvolvimento.</div>
+                        </div>
+                    </div>
+
+                    <div class="cert-card">
+                        <div class="cert-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                            </svg>
+                        </div>
+                        <div>
+                            <div class="cert-title">SENAC — Desenvolvimento Backend</div>
+                            <div class="cert-desc" data-i18n="cert2_desc">Node.js, TypeScript, TypeORM e MySQL na Prática — desenvolvimento de APIs e integração com banco de dados relacional.</div>
+                        </div>
+                    </div>
+
+                    <div class="cert-card">
+                        <div class="cert-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                            </svg>
+                        </div>
+                        <div>
+                            <div class="cert-title">ServiceNow University — Now Learning</div>
+                            <div class="cert-desc" data-i18n="cert3_desc">Scripting, ACL, flows e preparação para implementação e administração de instâncias ServiceNow.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- Tecnologias -->
+    <section id="tecnologias">
+        <div class="container">
+            <div class="text-center reveal">
+                <span class="section-label" data-i18n="label_tech">Stack</span>
+                <h2 class="section-title" data-i18n="title_tech">Tecnologias</h2>
+            </div>
+            <div class="tech-grid reveal stagger-1">
+                <div class="tech-category">
+                    <div class="tech-cat-title" data-i18n="tech_lang">Linguagens</div>
+                    <div class="tech-items">
+                        <span class="tech-item">TypeScript</span>
+                        <span class="tech-item">JavaScript</span>
+                        <span class="tech-item">HTML</span>
+                        <span class="tech-item">CSS</span>
+                        <span class="tech-item">Python</span>
+                        <span class="tech-item">Node.js</span>
+                        <span class="tech-item">Java</span>
+                        <span class="tech-item">Dart</span>
+                    </div>
+                </div>
+                <div class="tech-category">
+                    <div class="tech-cat-title" data-i18n="tech_db">Dados & Infra</div>
+                    <div class="tech-items">
+                        <span class="tech-item">MongoDB</span>
+                        <span class="tech-item">MySQL</span>
+                        <span class="tech-item">TypeORM</span>
+                        <span class="tech-item">Git</span>
+                        <span class="tech-item">WSL/Ubuntu</span>
+                        <span class="tech-item">VS Code</span>
+                    </div>
+                </div>
+                <div class="tech-category">
+                    <div class="tech-cat-title" data-i18n="tech_plat">Plataformas</div>
+                    <div class="tech-items">
+                        <span class="tech-item">ServiceNow</span>
+                        <span class="tech-item">Flutter</span>
+                        <span class="tech-item">Netlify</span>
+                        <span class="tech-item">GitHub</span>
+                        <span class="tech-item">Rocket.Chat</span>
+                    </div>
+                </div>
+                <div class="tech-category">
+                    <div class="tech-cat-title" data-i18n="tech_auto">Automação & IA</div>
+                    <div class="tech-items">
+                        <span class="tech-item">Automação</span>
+                        <span class="tech-item">OCR</span>
+                        <span class="tech-item">IA local</span>
+                        <span class="tech-item">Machine Learning</span>
+                        <span class="tech-item">Agentes IA</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- Contato -->
+    <section id="contato">
+        <div class="container">
+            <div class="text-center reveal">
+                <span class="section-label" data-i18n="label_contact">Contato</span>
+                <h2 class="section-title" data-i18n="title_contact">Vamos conversar</h2>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info reveal">
+                    <h3 data-i18n="contact_connect">Conecte-se comigo</h3>
+                    <p data-i18n="contact_text">
+                        GitHub, LinkedIn, e-mail e currículo. Estou aberto a oportunidades em desenvolvimento de software, automação, integrações e plataformas corporativas.
+                    </p>
+                    <div style="margin-bottom: 1.5rem;">
+                        <div style="font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-muted); margin-bottom: 0.75rem;" data-i18n="social_label">Redes Sociais</div>
+                        <div class="social-links">
+                            <a href="https://github.com/felipperaia" class="social-link" target="_blank" rel="noopener">
+                                <div class="social-link-inner">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                    </svg>
+                                    GitHub
+                                </div>
+                                <span class="arrow">→</span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/felippe-adriel-232527163/" class="social-link" target="_blank" rel="noopener">
+                                <div class="social-link-inner">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                        <rect x="2" y="9" width="4" height="12"></rect>
+                                        <circle cx="4" cy="4" r="2"></circle>
+                                    </svg>
+                                    LinkedIn
+                                </div>
+                                <span class="arrow">→</span>
+                            </a>
+                            <a href="mailto:felippeadriel46@gmail.com" class="social-link">
+                                <div class="social-link-inner">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                        <polyline points="22,6 12,13 2,6"></polyline>
+                                    </svg>
+                                    E-mail
+                                </div>
+                                <span class="arrow">→</span>
+                            </a>
+                            <a href="/public/curriculum_felippe.pdf" class="social-link" download>
+                                <div class="social-link-inner">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                        <polyline points="14 2 14 8 20 8"></polyline>
+                                        <line x1="16" y1="13" x2="8" y2="13"></line>
+                                        <line x1="16" y1="17" x2="8" y2="17"></line>
+                                        <polyline points="10 9 9 9 8 9"></polyline>
+                                    </svg>
+                                    Currículo
+                                </div>
+                                <span class="arrow">→</span>
+                            </a>
+                            <a href="https://wa.me/5581995636586" class="social-link whatsapp" target="_blank" rel="noopener">
+                                <div class="social-link-inner">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                                    </svg>
+                                    <span data-i18n="btn_whatsapp">Enviar WhatsApp</span>
+                                </div>
+                                <span class="arrow">→</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-card reveal stagger-2">
+                    <h3 data-i18n="form_title">Enviar mensagem</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name" data-i18n="form_name">Seu nome</label>
+                            <input type="text" id="name" name="name" placeholder="João Silva" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" data-i18n="form_email">E-mail</label>
+                            <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" data-i18n="form_message">Mensagem</label>
+                            <textarea id="message" name="message" placeholder="Olá, gostaria de conversar sobre..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">
+                            <span>→</span>
+                            <span data-i18n="form_submit">Enviar mensagem</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/5581995636586?text=Ol%C3%A1%2C%20eu%20vim%20pelo%20seu%20portif%C3%B3lio%2C%20gostaria%20de%20contratar%20seus%20servi%C3%A7os" target="_blank" rel="noopener" class="fab" aria-label="WhatsApp">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+        </svg>
+    </a>
+
+    <script src="src/main.js" defer></script>
+</body>
+
+<footer>
+    <p>&copy; 2026 — Portfólio — Felippe Raia. Todos os direitos reservados.</p>
+</footer>
+</html>
